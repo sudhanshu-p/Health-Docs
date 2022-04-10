@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Docs</title>
+</head>
+<body>
+    <style>
+        html {
+            background-color: black;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container{
+            display: flex;
+        }
+        .form{
+            display: flex;
+            color: #00c2ff;
+            padding: 30px;
+        }
+        label,input{
+            margin: 10px;
+            width: 150px;
+            height: 20px;
+        }
+        input{
+            border-radius: 10px;
+        }
+        label{
+            border-radius:2px;
+        }
+        h1{
+            padding-left: 40px;
+        }
+        .submit {
+            background-color: #00c2ff;
+            color: black;
+        }
+    </style>
+    <div class="container">
+    <div class="form">
+        <form action="/qrcode">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Your full Name"/><br>
+            <label for="height">Height:</label>
+            <input type="number" id="height" placeholder="Height (in cms)"/><br>
+            <label for="age">Age:</label>
+            <input type="number" placeholder="Enter your age" id="age"/><br>
+            <label for="BP">Bp level:</label>
+            <input type="number" id="BP" placeholder="Lower">- <input type="number" id="BP" placeholder="Upper"><br>
+            <label for="diabetes">Do you have diabetes:</label>
+            <input type="checkbox" id="diabetes" ><br>
+            <label for="pwd">PWD:</label>
+            <input type="checkbox" id="pwd"><br>
+            <label for="allergies">Allergies: </label>
+            <input type="text"><br>
+            <label for="allergies">Past Accidents: </label>
+            <input type="text"><br>
+            <label for="allergies">Other Ailments </label>
+            <input type="text"><br>
+            <label for="allergies">Are you vaccinated? </label>
+            <input type="checkbox"><br>
+            <label for="allergies">Contact of a Relative: </label>
+            <input type="text"><br>
+            <label for="allergies">Do you have insurance? </label>
+            <input type="checkbox"><br>
+            <input type="submit" value="Submit" class="submit">
+        </form>
+    </div>
+</body>
+</html>
